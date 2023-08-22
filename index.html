@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/kalkulator-segitiga/CSS/style.css">
+    <title>Kalkulator Segitiga</title>
+</head>
+
+<body>
+    <header>
+        <h1>Kalkulator Luas dan Keliling Segitiga</h1>
+    </header>
+    <main>
+        <section>
+            <h2 class="opening-web">Selamat Datang di Kalkulator Segitiga</h2>
+            <div class="kata-pembuka">
+                Terima kasih sudah mengunjungi Web Kalkulator Segitiga <br>
+                Sebuah web sederhana untuk menghitung keliling dan luas segitiga
+            </div>
+        </section>
+
+        <section>
+            <h3 id="judul-keliling">Keliling Segitiga</h3>
+            <img src="Assets/Segitiga.png" alt="Gambar-Segitiga" title="Segitiga">
+            <h4 class="judul-rumus">Rumus Keliling Segitiga yaitu : </h4>
+            <div class="rumus"><strong>K = S1 + S2 + S3</strong></div>
+            <div class="keterangan">
+                Keterangan : <br>
+                K  = Keliling <br>
+                S1 = Sisi A <br>
+                S2 = Sisi B <br>
+                S3 = Sisi C <br>
+            </div>
+        </section>
+
+        <hr>
+        
+        <h3 class="hitung-keliling">Hitung Keliling Segitiga</h3>
+
+        <section class="input-section">
+            <label for="sisiA">Sisi A :</label>
+            <input type="number" id="sideA" placeholder="0">
+            <label for="sisiB">Sisi B :</label>
+            <input type="number" id="sideB" placeholder="0">
+            <label for="sisiC">Sisi C :</label>
+            <input type="number" id="sideC" placeholder="0"><br>
+            <output id="Circumference" class="keliling">Keliling Segitiga :</output>
+            
+            <section>
+                <button class="button1" onclick="Circumference()">Hitung</button> <br>
+                <button class="button2"><a href="#judul-luas" class="link">Ke Hitung Luas</a></button>
+                <button class="button3" onclick="resetcircumference()">Reset</button>
+            </section>
+        </section>
+        <hr>
+        <section>
+            <h3>Luas Segitiga</h3>
+            <img src="Assets/Segitiga.png" alt="Gambar-Segitiga" title="Segitiga">
+            <div class="judul-rumus"> Rumus Luas Segitiga yaitu :</div> 
+            <div class="rumus"><strong>L = 1/2 x a x t</strong></div>
+            <br>
+            <div class="keterangan">
+                Keterangan : <br>
+                L = Luas <br>
+                a = Alas <br>
+                t = Tinggi <br>
+            </div>
+        </section>
+        <hr>
+        <h3 id="judul-luas" class="hitung-luas">Hitung Luas Segitiga</h3>
+
+        <section class="input-section">
+            <label for="alas">Alas Segitiga :</label>
+            <input type="number" id="base" placeholder="0">
+            <label for="tinggi">Tinggi Segitiga :</label>
+            <input type="number" id="height" placeholder="0"> <br>
+            <output id="area" class="luas">Luas Segitiga :</output>
+            
+            <section>
+                <button class="button1" onclick="area()">Hitung</button> <br>
+                <button class="button2"><a href="#judul-keliling" class="link">Ke Hitung Keliling</a></button>
+                <button class="button3" onclick="resetarea()">Reset</button>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <!-- Membuat footer menjadi running text -->
+        <h4><marquee>Created by Samuel Mahesa Sinulingga for the RevoU Mini Project Assignment</marquee></h4>
+    </footer>
+    <script src="/kalkulator-segitiga/JS/script.js"></script>
+</body>
+</html>
